@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> create Calculation</title>
+        <link rel="stylesheet"  href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="con">
+                <div class="sub">
+                        <input type="text"  class="input1">
+                        <!-- <div class="head">
+
+                        </div> -->
+                        </div>
+                    <div class="second">
+                        <input type="button"  value="c"  class="close"  onclick="document.querySelector('.input1').value='0'">
+                        <input type="button"  value="→" class="delete" onclick="document.querySelector('.input1').value=document.querySelector('.input1').value.toString().slice(0,-1)">
+                        <input type="button"  value="%"  onclick="document.querySelector('.input1').value+='%'">
+                        <input type="button"  value="/"  onclick="document.querySelector('.input1').value+='/'">
+                    </div>
+                    <div class="third">
+                        <input type="button"  value="7" onclick="document.querySelector('.input1').value+='7'">
+                        <input type="button"  value="8" onclick="document.querySelector('.input1').value+='8'">
+                        <input type="button"  value="9" onclick="document.querySelector('.input1').value+='9'">
+                        <input type="button"  value="*" onclick="document.querySelector('.input1').value+='*'"> 
+                    </div>
+                    <div class="four">
+                        <input type="button"  value="4"  onclick="document.querySelector('.input1').value+='4'">
+                        <input type="button"   value="5" onclick="document.querySelector('.input1').value+='5'">
+                        <input type="button"  value="6"  onclick="document.querySelector('.input1').value+='6'">
+                        <input type="button"  value="-"  onclick="document.querySelector('.input1').value+='-'">
+                    </div>
+                    <div class="five">
+                        <input type="button"  value="1" onclick="document.querySelector('.input1').value+='1'">
+                        <input type="button"   value="2" onclick="document.querySelector('.input1').value+='2'">
+                        <input type="button"  value="3" onclick="document.querySelector('.input1').value+='3'">
+                        <input type="button"  value="+" onclick="document.querySelector('.input1').value+='+'">
+                    </div>
+                    <div>
+                        <input type="button"  value="00" onclick="document.querySelector('.input1').value+='00'">
+                        <input type="button"   value="0" onclick="document.querySelector('.input1').value+='0'">
+                        <input type="button"  value="." onclick="document.querySelector('.input1').value+='.'">
+                        <input type="button"  value="=" onclick="solve()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
